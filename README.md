@@ -25,25 +25,34 @@ Se ejecuta solo con poner make y enter en la consola de Linux (Ejecutando el Mak
 
 Si están en modo manual y quieren introducir algunas funciones conocidas en las componentes del tensor métrico, la forma de introducirlas son las siguientes:
 
-1. Exponencial: 
+1. Exponencial:
+
 g00: exp(c_1* y) ![equation](https://latex.codecogs.com/gif.latex?e%5E%7Bc_1y%7D)
 
 2. Potencias:
+
 g00: -x**2 ![equation](https://latex.codecogs.com/gif.latex?-x%5E2)
 
 3. Funciones trigonométricas:
+
 g00: sin(theta) ![equation](https://latex.codecogs.com/gif.latex?%5Csin%28%5Ctheta%29)
+
 g00: cos(phi)   ![equation](https://latex.codecogs.com/gif.latex?%5Ccos%28%5Cphi%29)
+
 g00: tan(r)   ![equation](https://latex.codecogs.com/gif.latex?%5Ctan%28r%29)
 
 # Variables
 
-1. Coordenadas Cartesianas 
+1. Coordenadas Cartesianas:
+
 t,x,y,z (en consola) = ![equation](https://latex.codecogs.com/gif.latex?t%2Cx%2Cy%2Cz) (en LaTeX)
 
-2. Coordenadas Cilíndricas
+
+2. Coordenadas Cilíndricas:
+
 t,r,theta,z (en consola) =  ![equation](https://latex.codecogs.com/gif.latex?t%2Cr%2C%5Ctheta%2Cz) (en LaTeX)
 
-3. Coordenadas Esféricas
+3. Coordenadas Esféricas:
+
 t,r,theta,phi (en consola) =  ![equation](https://latex.codecogs.com/gif.latex?t%2Cr%2C%5Ctheta%2C%5Cphi) (en LaTeX)
 
