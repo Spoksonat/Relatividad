@@ -27,19 +27,19 @@ Si están en modo manual y quieren introducir algunas funciones conocidas en las
 
 1. Exponencial:
 
-g00: exp(c_1* y) ![equation](https://latex.codecogs.com/gif.latex?e%5E%7Bc_1y%7D)
+g00: exp(c_1* y) (Comando en consola que en LaTeX se ve como ![equation](https://latex.codecogs.com/gif.latex?e%5E%7Bc_1y%7D))
 
 2. Potencias:
 
-g00: -x**2 ![equation](https://latex.codecogs.com/gif.latex?-x%5E2)
+g00: -x**2 (Comando en consola que en LaTeX se ve como ![equation](https://latex.codecogs.com/gif.latex?-x%5E2))
 
 3. Funciones trigonométricas:
 
-g00: sin(theta) ![equation](https://latex.codecogs.com/gif.latex?%5Csin%28%5Ctheta%29)
+g00: sin(theta) ((Comando en consola que en LaTeX se ve como ![equation](https://latex.codecogs.com/gif.latex?%5Csin%28%5Ctheta%29))
 
-g00: cos(phi)   ![equation](https://latex.codecogs.com/gif.latex?%5Ccos%28%5Cphi%29)
+g00: cos(phi)   (Comando en consola que en LaTeX se ve como ![equation](https://latex.codecogs.com/gif.latex?%5Ccos%28%5Cphi%29))
 
-g00: tan(r)   ![equation](https://latex.codecogs.com/gif.latex?%5Ctan%28r%29)
+g00: tan(r)   (Comando en consola que en LaTeX se ve como![equation](https://latex.codecogs.com/gif.latex?%5Ctan%28r%29))
 
 # Variables
 
