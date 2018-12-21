@@ -13,7 +13,11 @@ Como extra, se ponen dos ejemplos de los archivos pdf resultantes de ejecutar el
 Para instalar Sympy: sudo pip install sympy
 Para instalar Gravipy: sudo pip install gravipy
 
-2. Ejecutar:
+2. Verificar que se tenga el compilador de LaTeX pdflatex
+
+Para instalar pdflatex en Ubuntu se usa: sudo apt-get install texlive-latex-base 
+
+3. Ejecutar:
 
 Se ejecuta solo con poner make y enter en la consola de Linux (Ejecutando el Makefile).
 
