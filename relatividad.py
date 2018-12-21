@@ -125,16 +125,16 @@ elif(met == 'Manual'):
         gpp = Tensor('g',2,gp)       
 
         def gpp_new_method(idxs):
-            component = gmat[idxs[0]-1][idxs[1]-1] # definition
-            gpp.components.update({idxs: component}) # memoization
+            component = gmat[idxs[0]-1][idxs[1]-1] 
+            gpp.components.update({idxs: component}) 
             return component
-        gpp._compute_covariant_component = gpp_new_method # _compute_covariant_component method was overriden
+        gpp._compute_covariant_component = gpp_new_method 
 
         Metric = gpp(All,All)
         g = MetricTensor('g', co, Metric)
 
     elif(coords == 'Cilindricas'):
-        t,r,theta,z = symbols('t,r,\\theta,z') #Coord.esfericas
+        t,r,theta,z = symbols('t,r,\\theta,z') #Coord.cilindricas
         co = Coordinates(r'\chi',[t,r,theta,z])
 
         c_1,c_2,c_3,c_4,c_5,c_6 = symbols('c_1,c_2,c_2,c_4,c_5,c_6')
@@ -174,10 +174,10 @@ elif(met == 'Manual'):
         gpp = Tensor('g',2,gp)       
 
         def gpp_new_method(idxs):
-            component = gmat[idxs[0]-1][idxs[1]-1] # definition
-            gpp.components.update({idxs: component}) # memoization
+            component = gmat[idxs[0]-1][idxs[1]-1] 
+            gpp.components.update({idxs: component}) 
             return component
-        gpp._compute_covariant_component = gpp_new_method # _compute_covariant_component method was overriden
+        gpp._compute_covariant_component = gpp_new_method 
 
         Metric = gpp(All,All)
         g = MetricTensor('g', co, Metric)
@@ -223,10 +223,10 @@ elif(met == 'Manual'):
         gpp = Tensor('g',2,gp)       
 
         def gpp_new_method(idxs):
-            component = gmat[idxs[0]-1][idxs[1]-1] # definition
-            gpp.components.update({idxs: component}) # memoization
+            component = gmat[idxs[0]-1][idxs[1]-1] 
+            gpp.components.update({idxs: component}) 
             return component
-        gpp._compute_covariant_component = gpp_new_method # _compute_covariant_component method was overriden
+        gpp._compute_covariant_component = gpp_new_method 
 
         Metric = gpp(All,All)
         g = MetricTensor('g', co, Metric)
@@ -321,17 +321,17 @@ def u_new_method(idxs):
     component = g(idxs[0],1)*ucontra[0]
     for i in range(2,5):
         component += g(idxs[0],i)*ucontra[i-1]
-    u.components.update({idxs: component}) # memoization
+    u.components.update({idxs: component}) 
     return component
-u._compute_covariant_component = u_new_method # _compute_covariant_component method was overriden
+u._compute_covariant_component = u_new_method 
 
 
 
 def T_new_method(idxs):
-    component = (p+rho)*u(idxs[0])*u(idxs[1]) + p*g(idxs[0],idxs[1]) # definition
-    T.components.update({idxs: component}) # memoization
+    component = (p+rho)*u(idxs[0])*u(idxs[1]) + p*g(idxs[0],idxs[1]) 
+    T.components.update({idxs: component}) 
     return component
-T._compute_covariant_component = T_new_method # _compute_covariant_component method was overriden
+T._compute_covariant_component = T_new_method 
 
 file = open("estresp.tex","w")
 file.write("\\begin{align*}" + "\n" + "T_{\\mu\\nu}" + "=" + (latex(T(All,All))) + "\n" + "\\end{align*}")
