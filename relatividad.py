@@ -255,7 +255,7 @@ file.close()
 file = open("Christoffelp.tex","w")
 file.write("\\begingroup" + "\n")
 file.write("\\allowdisplaybreaks" + "\n")
-file.write("\\begin{align*}" + "\n")
+file.write("\\begin{dmath}" + "\n")
 
 
 for i in range(1,5):
@@ -264,7 +264,7 @@ for i in range(1,5):
             file.write("\Gamma^{" + str(i-1) + "}" + "_{" + str(j-1) + str(k-1) + "}" + "&=" + (latex(Ga(-i,j,k).simplify())) + "\\" + "\\" + "\n" ) #Ga(-i,j,k)= Gamma^{i}_{j,k}, Ga(i,j,k) = gamma_{i,j,k}
 
 
-file.write("\\end{align*}"+ "\n")
+file.write("\\end{dmath}"+ "\n")
 file.write("\\endgroup" )
 
 file.close()
@@ -275,7 +275,7 @@ Ri = Ricci('Ri',g)
 file = open("Riccip.tex","w")
 file.write("\\begingroup" + "\n")
 file.write("\\allowdisplaybreaks" + "\n")
-file.write("\\begin{align*}" + "\n")
+file.write("\\begin{dmath}" + "\n")
 
 
 for i in range(1,5):
@@ -283,7 +283,7 @@ for i in range(1,5):
 
         file.write("R_{" + str(i-1) + str(j-1) + "}" + "&=" + (latex(Ri(i,j))) + "\\" + "\\" + "\n" )
 
-file.write("\\end{align*}"+ "\n")
+file.write("\\end{dmath}"+ "\n")
 file.write("\\endgroup" )
 
 file.close()
@@ -293,7 +293,7 @@ G = Einstein('G',Ri)
 file = open("Einsteinp.tex","w")
 file.write("\\begingroup" + "\n")
 file.write("\\allowdisplaybreaks" + "\n")
-file.write("\\begin{align*}" + "\n")
+file.write("\\begin{dmath}" + "\n")
 
 
 for i in range(1,5):
@@ -301,7 +301,7 @@ for i in range(1,5):
 
         file.write("G_{" + str(i-1) + str(j-1) + "}" + "&=" + (latex(G(i,j))) + "\\" + "\\" + "\n" )
 
-file.write("\\end{align*}"+ "\n")
+file.write("\\end{dmath}"+ "\n")
 file.write("\\endgroup" )
 
 file.close()
