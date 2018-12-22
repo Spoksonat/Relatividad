@@ -261,7 +261,7 @@ file.write("\\begin{dmath}" + "\n")
 for i in range(1,5):
     for j in range(1,5):
         for k in range(1,5):
-            file.write("\Gamma^{" + str(i-1) + "}" + "_{" + str(j-1) + str(k-1) + "}" + "&=" + (latex(Ga(-i,j,k).simplify())) + "\\" + "\\" + "\n" ) #Ga(-i,j,k)= Gamma^{i}_{j,k}, Ga(i,j,k) = gamma_{i,j,k}
+            file.write("\Gamma^{" + str(i-1) + "}" + "_{" + str(j-1) + str(k-1) + "}" + "=" + (latex(Ga(-i,j,k).simplify())) + "\\" + "\\" + "\n" ) #Ga(-i,j,k)= Gamma^{i}_{j,k}, Ga(i,j,k) = gamma_{i,j,k}
 
 
 file.write("\\end{dmath}"+ "\n")
@@ -281,7 +281,7 @@ file.write("\\begin{dmath}" + "\n")
 for i in range(1,5):
     for j in range(1,5):
 
-        file.write("R_{" + str(i-1) + str(j-1) + "}" + "&=" + (latex(Ri(i,j))) + "\\" + "\\" + "\n" )
+        file.write("R_{" + str(i-1) + str(j-1) + "}" + "=" + (latex(Ri(i,j))) + "\\" + "\\" + "\n" )
 
 file.write("\\end{dmath}"+ "\n")
 file.write("\\endgroup" )
@@ -299,7 +299,7 @@ file.write("\\begin{dmath}" + "\n")
 for i in range(1,5):
     for j in range(1,5):
 
-        file.write("G_{" + str(i-1) + str(j-1) + "}" + "&=" + (latex(G(i,j))) + "\\" + "\\" + "\n" )
+        file.write("G_{" + str(i-1) + str(j-1) + "}" + "=" + (latex(G(i,j))) + "\\" + "\\" + "\n" )
 
 file.write("\\end{dmath}"+ "\n")
 file.write("\\endgroup" )
