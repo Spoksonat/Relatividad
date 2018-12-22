@@ -253,19 +253,12 @@ file.write("\\begin{align*}" + "\n" + "g_{\\mu\\nu}" + "=" + (latex(g(All,All)))
 file.close()
 
 file = open("Christoffelp.tex","w")
-file.write("\\begingroup" + "\n")
-file.write("\\allowdisplaybreaks" + "\n")
-file.write("\\begin{dmath}" + "\n")
-
 
 for i in range(1,5):
     for j in range(1,5):
         for k in range(1,5):
-            file.write("\Gamma^{" + str(i-1) + "}" + "_{" + str(j-1) + str(k-1) + "}" + "=" + (latex(Ga(-i,j,k).simplify())) + "\\" + "\\" + "\n" ) #Ga(-i,j,k)= Gamma^{i}_{j,k}, Ga(i,j,k) = gamma_{i,j,k}
+            file.write("\\begin{dmath*}" + "\n" + "\Gamma^{" + str(i-1) + "}" + "_{" + str(j-1) + str(k-1) + "}" + "=" + (latex(Ga(-i,j,k).simplify())) + "\n" + "\\end{dmath*}"+ "\n"  ) #Ga(-i,j,k)= Gamma^{i}_{j,k}, Ga(i,j,k) = gamma_{i,j,k}
 
-
-file.write("\\end{dmath}"+ "\n")
-file.write("\\endgroup" )
 
 file.close()
 
@@ -273,36 +266,23 @@ file.close()
 Ri = Ricci('Ri',g)
 
 file = open("Riccip.tex","w")
-file.write("\\begingroup" + "\n")
-file.write("\\allowdisplaybreaks" + "\n")
-file.write("\\begin{dmath}" + "\n")
 
 
 for i in range(1,5):
     for j in range(1,5):
 
-        file.write("R_{" + str(i-1) + str(j-1) + "}" + "=" + (latex(Ri(i,j))) + "\\" + "\\" + "\n" )
-
-file.write("\\end{dmath}"+ "\n")
-file.write("\\endgroup" )
+        file.write("\\begin{dmath*}" + "\n"+"R_{" + str(i-1) + str(j-1) + "}" + "=" + (latex(Ri(i,j))) + "\n" + "\\end{dmath*}"+ "\n" )
 
 file.close()
 
 G = Einstein('G',Ri)
 
 file = open("Einsteinp.tex","w")
-file.write("\\begingroup" + "\n")
-file.write("\\allowdisplaybreaks" + "\n")
-file.write("\\begin{dmath}" + "\n")
-
 
 for i in range(1,5):
     for j in range(1,5):
 
-        file.write("G_{" + str(i-1) + str(j-1) + "}" + "=" + (latex(G(i,j))) + "\\" + "\\" + "\n" )
-
-file.write("\\end{dmath}"+ "\n")
-file.write("\\endgroup" )
+        file.write("\\begin{dmath*}" + "\n" + "G_{" + str(i-1) + str(j-1) + "}" + "=" + (latex(G(i,j))) + "\n" + "\\end{dmath*}"+ "\n"  )
 
 file.close()
 
@@ -487,10 +467,6 @@ for i in range(1,5):
         covT3 += Ga(-i,i,j).simplify()*T(-j,-3) + Ga(-3,i,j).simplify()*T(-i,-j)
         covT4 += Ga(-i,i,j).simplify()*T(-j,-4) + Ga(-4,i,j).simplify()*T(-i,-j)
 
-        covT1.simplify()
-        covT2.simplify()
-        covT3.simplify()
-        covT4.simplify()
 
 file = open("covT1p.tex","w")
 file.write("\\begin{dmath}" + "\n"  + (latex(covT1)) + "=" + "0" + "\n" + "\\end{dmath}")
