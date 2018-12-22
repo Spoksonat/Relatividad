@@ -90,32 +90,32 @@ elif(met == 'Manual'):
 
         c_1,c_2,c_3,c_4,c_5,c_6 = symbols('c_1,c_2,c_2,c_4,c_5,c_6')
 
-        f_t1 = Function('f_{t1}')
-        f_t2 = Function('f_{t2}') 
-        f_r1 = Function('f_{r1}') 
-        f_r2 = Function('f_{r2}') 
-        f_theta1 = Function('f_{\\theta 1}') 
-        f_theta2 = Function('f_{\\theta 2}') 
-        f_phi1 = Function('f_{\\phi 1}') 
-        f_phi2 = Function('f_{\\phi 2}')
+        f_1 = Function('f_{1}')
+        f_2 = Function('f_{2}') 
+        f_3 = Function('f_{3}') 
+        f_4 = Function('f_{4}') 
+        f_5 = Function('f_{5}') 
+        f_6 = Function('f_{6}') 
+        f_7 = Function('f_{7}') 
+        f_8 = Function('f_{8}')
 
  
-        g00 = raw_input('Introducir g00:' )
-        g01 = raw_input('Introducir g01:' )
-        g02 = raw_input('Introducir g02:' )
-        g03 = raw_input('Introducir g03:' )
-        g10 = raw_input('Introducir g10:' )
-        g11 = raw_input('Introducir g11:' )
-        g12 = raw_input('Introducir g12:' )
-        g13 = raw_input('Introducir g13:' )
-        g20 = raw_input('Introducir g20:' )
-        g21 = raw_input('Introducir g21:' )
-        g22 = raw_input('Introducir g22:' )
-        g23 = raw_input('Introducir g23:' )
-        g30 = raw_input('Introducir g30:' )
-        g31 = raw_input('Introducir g31:' )
-        g32 = raw_input('Introducir g32:' )
-        g33 = raw_input('Introducir g33:' )
+        g00 = eval(raw_input('Introducir g00:' ))
+        g01 = eval(raw_input('Introducir g01:' ))
+        g02 = eval(raw_input('Introducir g02:' ))
+        g03 = eval(raw_input('Introducir g03:' ))
+        g10 = eval(raw_input('Introducir g10:' ))
+        g11 = eval(raw_input('Introducir g11:' ))
+        g12 = eval(raw_input('Introducir g12:' ))
+        g13 = eval(raw_input('Introducir g13:' ))
+        g20 = eval(raw_input('Introducir g20:' ))
+        g21 = eval(raw_input('Introducir g21:' ))
+        g22 = eval(raw_input('Introducir g22:' ))
+        g23 = eval(raw_input('Introducir g23:' ))
+        g30 = eval(raw_input('Introducir g30:' ))
+        g31 = eval(raw_input('Introducir g31:' ))
+        g32 = eval(raw_input('Introducir g32:' ))
+        g33 = eval(raw_input('Introducir g33:' ))
         gmat = np.array([[g00,g01,g02,g03],[g10,g11,g12,g13],[g20,g21,g22,g23],[g30,g31,g32,g33]])
         Metric = diag(1,1,1,1)
         gp = MetricTensor('gp', co, Metric)
@@ -125,7 +125,7 @@ elif(met == 'Manual'):
         gpp = Tensor('g',2,gp)       
 
         def gpp_new_method(idxs):
-            component = gmat[idxs[0]-1][idxs[1]-1] 
+            component = gmat[idxs[0]-1][idxs[1]-1]
             gpp.components.update({idxs: component}) 
             return component
         gpp._compute_covariant_component = gpp_new_method 
@@ -139,32 +139,32 @@ elif(met == 'Manual'):
 
         c_1,c_2,c_3,c_4,c_5,c_6 = symbols('c_1,c_2,c_2,c_4,c_5,c_6')
 
-        f_t1 = Function('f_{t1}')
-        f_t2 = Function('f_{t2}')
-        f_r1 = Function('f_{r1}') 
-        f_r2 = Function('f_{r2}') 
-        f_theta1 = Function('f_{\\theta 1}') 
-        f_theta2 = Function('f_{\\theta 2}') 
-        f_z1 = Function('f_{z1}')
-        f_z2 = Function('f_{z2}')
+        f_1 = Function('f_{1}')
+        f_2 = Function('f_{2}') 
+        f_3 = Function('f_{3}') 
+        f_4 = Function('f_{4}') 
+        f_5 = Function('f_{5}') 
+        f_6 = Function('f_{6}') 
+        f_7 = Function('f_{7}') 
+        f_8 = Function('f_{8}')
 
 
-        g00 = raw_input('Introducir g00:' )
-        g01 = raw_input('Introducir g01:' )
-        g02 = raw_input('Introducir g02:' )
-        g03 = raw_input('Introducir g03:' )
-        g10 = raw_input('Introducir g10:' )
-        g11 = raw_input('Introducir g11:' )
-        g12 = raw_input('Introducir g12:' )
-        g13 = raw_input('Introducir g13:' )
-        g20 = raw_input('Introducir g20:' )
-        g21 = raw_input('Introducir g21:' )
-        g22 = raw_input('Introducir g22:' )
-        g23 = raw_input('Introducir g23:' )
-        g30 = raw_input('Introducir g30:' )
-        g31 = raw_input('Introducir g31:' )
-        g32 = raw_input('Introducir g32:' )
-        g33 = raw_input('Introducir g33:' )
+        g00 = eval(raw_input('Introducir g00:' ))
+        g01 = eval(raw_input('Introducir g01:' ))
+        g02 = eval(raw_input('Introducir g02:' ))
+        g03 = eval(raw_input('Introducir g03:' ))
+        g10 = eval(raw_input('Introducir g10:' ))
+        g11 = eval(raw_input('Introducir g11:' ))
+        g12 = eval(raw_input('Introducir g12:' ))
+        g13 = eval(raw_input('Introducir g13:' ))
+        g20 = eval(raw_input('Introducir g20:' ))
+        g21 = eval(raw_input('Introducir g21:' ))
+        g22 = eval(raw_input('Introducir g22:' ))
+        g23 = eval(raw_input('Introducir g23:' ))
+        g30 = eval(raw_input('Introducir g30:' ))
+        g31 = eval(raw_input('Introducir g31:' ))
+        g32 = eval(raw_input('Introducir g32:' ))
+        g33 = eval(raw_input('Introducir g33:' ))
         gmat = np.array([[g00,g01,g02,g03],[g10,g11,g12,g13],[g20,g21,g22,g23],[g30,g31,g32,g33]])
         Metric = diag(1,1,1,1)
         gp = MetricTensor('gp', co, Metric)
@@ -188,32 +188,32 @@ elif(met == 'Manual'):
 
         c_1,c_2,c_3,c_4,c_5,c_6 = symbols('c_1,c_2,c_2,c_4,c_5,c_6')
 
-        f_t1 = Function('f_{t1}')
-        f_t2 = Function('f_{t2}')
-        f_x1 = Function('f_{x1}') 
-        f_x2 = Function('f_{x2}') 
-        f_y1 = Function('f_{y1}') 
-        f_y2 = Function('f_{y2}') 
-        f_z1 = Function('f_{z1}') 
-        f_z2 = Function('f_{z2}')
+        f_1 = Function('f_{1}')
+        f_2 = Function('f_{2}') 
+        f_3 = Function('f_{3}') 
+        f_4 = Function('f_{4}') 
+        f_5 = Function('f_{5}') 
+        f_6 = Function('f_{6}') 
+        f_7 = Function('f_{7}') 
+        f_8 = Function('f_{8}')
 
 
-        g00 = raw_input('Introducir g00:' )
-        g01 = raw_input('Introducir g01:' )
-        g02 = raw_input('Introducir g02:' )
-        g03 = raw_input('Introducir g03:' )
-        g10 = raw_input('Introducir g10:' )
-        g11 = raw_input('Introducir g11:' )
-        g12 = raw_input('Introducir g12:' )
-        g13 = raw_input('Introducir g13:' )
-        g20 = raw_input('Introducir g20:' )
-        g21 = raw_input('Introducir g21:' )
-        g22 = raw_input('Introducir g22:' )
-        g23 = raw_input('Introducir g23:' )
-        g30 = raw_input('Introducir g30:' )
-        g31 = raw_input('Introducir g31:' )
-        g32 = raw_input('Introducir g32:' )
-        g33 = raw_input('Introducir g33:' )
+        g00 = eval(raw_input('Introducir g00:' ))
+        g01 = eval(raw_input('Introducir g01:' ))
+        g02 = eval(raw_input('Introducir g02:' ))
+        g03 = eval(raw_input('Introducir g03:' ))
+        g10 = eval(raw_input('Introducir g10:' ))
+        g11 = eval(raw_input('Introducir g11:' ))
+        g12 = eval(raw_input('Introducir g12:' ))
+        g13 = eval(raw_input('Introducir g13:' ))
+        g20 = eval(raw_input('Introducir g20:' ))
+        g21 = eval(raw_input('Introducir g21:' ))
+        g22 = eval(raw_input('Introducir g22:' ))
+        g23 = eval(raw_input('Introducir g23:' ))
+        g30 = eval(raw_input('Introducir g30:' ))
+        g31 = eval(raw_input('Introducir g31:' ))
+        g32 = eval(raw_input('Introducir g32:' ))
+        g33 = eval(raw_input('Introducir g33:' ))
         gmat = np.array([[g00,g01,g02,g03],[g10,g11,g12,g13],[g20,g21,g22,g23],[g30,g31,g32,g33]])
         Metric = diag(1,1,1,1)
         gp = MetricTensor('gp', co, Metric)
@@ -461,6 +461,53 @@ file.write("\\begin{dmath}" + "\n" + "\mathcal{L}" + "=" + "\\left[" +  latex(Lc
 
 file.close()
         
+
+
+#****************************************************************
+
+#Derivada Covariante Tensor de Estres-Energia
+#****************************************************************
+
+#nu=0
+covT1 = T(-1,-1).diff(co(-1))
+covT2 = T(-1,-2).diff(co(-1))
+covT3 = T(-1,-3).diff(co(-1))
+covT4 = T(-1,-4).diff(co(-1))
+
+for i in range(2,5):
+    covT1 += T(-i,-1).diff(co(-i))
+    covT2 += T(-i,-2).diff(co(-i))
+    covT3 += T(-i,-3).diff(co(-i))
+    covT4 += T(-i,-4).diff(co(-i))
+
+for i in range(1,5):
+    for j in range(1,5):
+        covT1 += Ga(-i,i,j).simplify()*T(-j,-1) + Ga(-1,i,j).simplify()*T(-i,-j)
+        covT2 += Ga(-i,i,j).simplify()*T(-j,-2) + Ga(-2,i,j).simplify()*T(-i,-j)
+        covT3 += Ga(-i,i,j).simplify()*T(-j,-3) + Ga(-3,i,j).simplify()*T(-i,-j)
+        covT4 += Ga(-i,i,j).simplify()*T(-j,-4) + Ga(-4,i,j).simplify()*T(-i,-j)
+
+        covT1.simplify()
+        covT2.simplify()
+        covT3.simplify()
+        covT4.simplify()
+
+file = open("covT1p.tex","w")
+file.write("\\begin{dmath}" + "\n"  + (latex(covT1)) + "=" + "0" + "\n" + "\\end{dmath}")
+file.close()
+
+file = open("covT2p.tex","w")
+file.write("\\begin{dmath}" + "\n" + (latex(covT2))+ "=" + "0" + "\n" + "\\end{dmath}")
+file.close()
+
+file = open("covT3p.tex","w")
+file.write("\\begin{dmath}" + "\n"  + (latex(covT3)) + "=" + "0" + "\n" + "\\end{dmath}")
+file.close()
+
+file = open("covT4p.tex","w")
+file.write("\\begin{dmath}" + "\n" + (latex(covT4))+ "=" + "0" + "\n" + "\\end{dmath}")
+file.close()
+
 
 
 #****************************************************************
