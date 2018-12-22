@@ -35,11 +35,11 @@ g00: -x**2 (Comando en consola que en LaTeX se ve como ![equation](https://latex
 
 3. Funciones trigonométricas:
 
-g00: sin(theta) (Comando en consola que en LaTeX se ve como ![equation](https://latex.codecogs.com/gif.latex?%5Csin%28%5Ctheta%29))
+g00: sin(theta) (Comando en consola que en LaTeX se ve como  ![equation](https://latex.codecogs.com/gif.latex?%5Csin%28%5Ctheta%29))
 
-g00: cos(phi)   (Comando en consola que en LaTeX se ve como ![equation](https://latex.codecogs.com/gif.latex?%5Ccos%28%5Cphi%29))
+g00: cos(phi)   (Comando en consola que en LaTeX se ve como  ![equation](https://latex.codecogs.com/gif.latex?%5Ccos%28%5Cphi%29))
 
-g00: tan(r)   (Comando en consola que en LaTeX se ve como![equation](https://latex.codecogs.com/gif.latex?%5Ctan%28r%29))
+g00: tan(r)   (Comando en consola que en LaTeX se ve como  ![equation](https://latex.codecogs.com/gif.latex?%5Ctan%28r%29))
 
 # Variables
 
