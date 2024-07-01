@@ -1,5 +1,8 @@
 # Generador de ecuaciones relativistas a partir del tensor métrico (Linux)
 
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.en.md)
+
 Generador de ecuaciones y variables relativistas generadas usando Simpy, que luego son guardadas en un archivo pdf usando una plantilla de LaTeX.
 
 ## Tabla de Contenidos
