@@ -1,5 +1,8 @@
 # Generator of Relativistic Equations from the Metric Tensor (Linux)
 
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/Spoksonat/Relatividad/blob/master/README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Spoksonat/Relatividad/blob/master/README.en.md)
+
 Generator of relativistic equations and variables using Simpy, which are then saved in a pdf file using a LaTeX template.
 
 ## Table of Contents
